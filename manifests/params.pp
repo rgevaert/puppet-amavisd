@@ -7,6 +7,5 @@ class amavisd::params {
   $packages_nonfree = ['lha','unrar' ]
   $ensure_nonfree   = absent
 
-  $configfile = '/etc/amavis/conf.d/50-user'
   $service    = 'amavis'
 }
