@@ -2,6 +2,11 @@ class amavisd::package
 {
   package {
     $amavisd::packages:
-      ensure => installed;
+      ensure => $amavisd::ensure;
+  }
+
+  package {
+    $amavisd::packages_nonfree:
+      ensure => $amavisd::ensure_nonfree;
   }
 }
